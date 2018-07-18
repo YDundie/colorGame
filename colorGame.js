@@ -5,6 +5,7 @@ var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var massageDisplay = document.getElementById("message");
 var h1 = document.querySelector("h1");
+var resetButton = document.getElementById("reset");
 
 
 colorDisplay.textContent = pickedColor ;
@@ -24,6 +25,7 @@ for(var i = 0 ; i < squares.length; i++ ){
             massageDisplay.textContent = "Correct";
             changeColors(clickedColor);
             h1.style.backgroundColor = clickedColor;
+            resetButton.textContent = "Play again?";
             
         }
         else{
@@ -36,6 +38,23 @@ for(var i = 0 ; i < squares.length; i++ ){
     
 }
 
+resetButton.addEventListener("click", function(){
+    
+    resetButton.textContent = "New Colors!";
+    
+    h1.style.backgroundColor ="#232323";
+    
+    colors = generateRandomColors(6);
+    
+    pickedColor = pickColor();
+    
+    colorDisplay.textContent = pickedColor;
+    
+    for(var i = 0 ; i < squares.length; i++ ){
+        
+        squares[i].style.backgroundColor = colors[i];
+    
+}})
 
 function changeColors(color){
     
