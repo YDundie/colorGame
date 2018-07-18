@@ -1,0 +1,44 @@
+body{
+    
+    background-color: #232323
+    
+        
+}
+
+
+.square{
+    
+    width: 30%;
+    height: 30%;
+    background: green;
+    padding-bottom: 30%;
+    float:left;
+    margin: 1.66%
+    
+}
+
+#container{
+    
+    max-width: 400px;
+    
+    margin: 0 auto;
+    
+}
+
+h1{
+    
+    color: white;
+    
+}
+
+#colorDisplay{
+    
+   text-transform: capitalize;
+   
+}
+
+span{
+    
+    color:white;
+    
+}
