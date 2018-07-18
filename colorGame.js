@@ -63,7 +63,7 @@ for(var i = 0 ; i < squares.length; i++ ){
            
             massageDisplay.textContent = "Correct";
             changeColors(clickedColor);
-            h1.style.backgroundColor = clickedColor;
+         
             resetButton.textContent = "Play again?";
             
         }
@@ -81,7 +81,7 @@ resetButton.addEventListener("click", function(){
     
     resetButton.textContent = "New Colors!";
     
-    h1.style.backgroundColor ="#232323";
+ 
     
     colors = generateRandomColors(numSquares);
     
